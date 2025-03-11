@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rogue - Raid Consumables</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://i.imgur.com/4XLyn.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative; /* Add this line */
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #333;
+        }
+        th, td {
+            border: 1px solid #555;
+            padding: 10px;
+        }
+        th {
+            background-color: #444;
+        }
+        a {
+            color: #6495ED;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            text-decoration: underline;
+        }
+        /* Column width adjustments */
+        th:nth-child(1), td:nth-child(1) {
+            font-weight: bold;
+            width: 25%; /* Name column */
+        }
+        th:nth-child(2), td:nth-child(2) {
+            width: 50%; /* Effect column */
+        }
+        th:nth-child(3), td:nth-child(3) {
+            width: 8%; /* Duration column */
+        }
+        th:nth-child(4), td:nth-child(4) {
+            width: 9%; /* Category column */
+        }
+        th:nth-child(5), td:nth-child(5) {
+            width: 7%; /* Price column */
+        }
+        .gold {
+            color: gold;
+        }
+        .silver {
+            color: silver;
+        }
+        .copper {
+            color: #B87333;
+        }
+        .blue-text {
+            color: #6495ED; /* Same color as links */
+            text-decoration: none;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-bottom: 5px;
+            margin-right: 10px;
+            font-size: 16px;
+            font-weight: bold;
+                    color: white;
+            background-color: #444;
+            border: 2px solid #6495ED;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #6495ED;
+            color: black;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
+            z-index: -1; /* Ensure the overlay stays behind the text */
+        }
+    </style>
+    <link rel="icon" type="image/png" href="https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg">
+</head>
+<body>
+    <a href="index.html" class="button">Consumables</a>
+    <a href="enchants.html" class="button">Enchants</a>
+    <a href="changelog.html" class="button">Changelog</a>
+    <h1>Rogue DPS Raid Consumables - Turtle WoW 1.17.2</h1>
+    <p style="font-size: 14px; color: lightgray;">
+        "⭐" indicates that these consumables should always be used in an ideal situation.<br>
+        "✨" indicates that this consumable is situational but may be used frequently.<br>
+        " " indicates that this consumable is listed only as a cheaper or more easily obtainable alternative.<br>
+        "💀" next to an offensive or defensive buff duration indicates that it persists through death.
+    </p>
+    <p style="font-size: 14px; color: lightgray;">
+        Prices are approximate, based on Auction House prices or vendor prices where available. You can save gold by crafting or farming the materials yourself. 
+    </p>
+    <h2>Offensive Buffs</h2>
+    <p style="font-size: 14px; color: lightgray;">
+        Buffs that share a category with one another do not stack.<br>Your best offensive buffs are: 
+            <strong><a href="https://database.turtle-wow.org/?item=13452" target="_blank" style="color: inherit; text-decoration: none;">Elixir of the Mongoose</a></strong>, 
+            <strong><a href="https://database.turtle-wow.org/?item=12451" target="_blank" style="color: inherit; text-decoration: none;">Juju Power</a></strong>, 
+            <strong><a href="https://database.turtle-wow.org/?item=12460" target="_blank" style="color: inherit; text-decoration: none;">Juju Might</a></strong>, 
+            <strong><a href="https://database.turtle-wow.org/?item=8412" target="_blank" style="color: inherit; text-decoration: none;">Ground Scorpok Assay</a></strong>,  
+            <strong><a href="https://database.turtle-wow.org/?item=51711" target="_blank" style="color: inherit; text-decoration: none;">Sweet Mountain Berry</a></strong> / 
+            <strong><a href="https://database.turtle-wow.org/?item=13928" target="_blank" style="color: inherit; text-decoration: none;">Grilled Squid</a></strong>,  
+            <strong><a href="https://database.turtle-wow.org/?item=60978" target="_blank" style="color: inherit; text-decoration: none;">Danonzo's Tel'Abim Medley</a></strong>, and
+            <strong><a href="https://database.turtle-wow.org/?item=12450" target="_blank" style="color: inherit; text-decoration: none;">Juju Flurry</a></strong>.<br>
+        You can also use <strong><a href="https://database.turtle-wow.org/?item=61181" target="_blank" style="color: inherit; text-decoration: none;">Potion of Quickness</a></strong>,
+        but it shares a 2-minute cooldown with your defensive and healing potions, so keep that in mind.
+    </p>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Effect</th>
+            <th>Duration</th>
+            <th>Category</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td><span>⭐</span><a href="https://database.turtle-wow.org/?item=13452" target="_blank">Elixir of the Mongoose</a></td>
+            <td>+25 Agility & 2% Crit Chance</td>
+            <td>💀1 Hour</td>
+            <td>Agility</td>
+            <td>≈ 2<span class="gold">G</span></td>
+        </tr>
+        <tr>
+            <td><a href="https://database.turtle-wow.org/?item=9187" target="_blank">Elixir of Greater Agility</a></td>
+            <td>+25 Agility</td>
+            <td>💀1 Hour</td>
+            <td>Agility</td>
+            <td>≈ 25<span class="silver">S</span></td>
+        </tr>
+        <tr>
+            <td><span>⭐</span><a href="https://database.turtle-wow.org/?item=12451" target="_blank">Juju Power</a></td>
+            <td>+30 Strength</td>
+            <td>30 Minutes</td>
+            <td>Strength</td>
+            <td>≈ 45<span class="silver">S</span></td>
+        </tr>
+        <tr>
+            <td><a href="https://database.turtle-wow.org/?item=9206" target="_blank">Elixir of Giants</a></td>
+            <td>+25 Strength</td>
+            <td>💀1 Hour</td>
+            <td>Strength</td>
+            <td>≈ 1<span class="gold">G</span> 30<span class="silver">S</span></td>
+        </tr>
+        <tr>
+            <td><span>⭐</span><a href="https://database.turtle-wow.org/?item=12460" target="_blank">Juju Might</a></td>
+            <td>+40 Attack Power</td>
+            <td>10 Minutes</td>
+            <td>Attack Power</td>
+            <td>≈ 4<span class="gold">G</span> 80<span class="silver">S</span></td>
+        </tr>
+        <tr>
+            <td><a href="https://database.turtle-wow.org/?item=12820" target="_blank">Winterfall Firewater</a></td>
+            <td>+35 Attack Power & Size Increase</td>
+            <td>20 Minutes</td>
+            <td>Attack Power</td>
+            <td>≈ 1<span class="gold">G</span> 50<span class="silver">S</span></td>
+        </tr>
+        <tr>
+            <td><span>⭐</span><a href="https://database.turtle-wow.org/?item=8412" target="_blank">Ground Scorpok Assay</a></td>
+            <td>+25 Agility</td>
+            <td>💀1 Hour</td>
+            <td>Blasted Lands</td>
+            <td>≈ 2<span class="gold">G</span> 90<span class="silver">S</span></td>
+        </tr>
+        <tr>
+            <td><a href="https://database.turtle-wow.org/?item=8410" target="_blank">R.O.I.D.S.</a></td>
+            <td>+25 Strength</td>
+            <td>💀1 Hour</td>
+            <td>Blasted Lands</td>
+            <td>≈ 2<span class="gold">G</span> 10<span class="silver">S</span></td>
+        </tr>
+        <tr>
+            <td><span>⭐</span><a href="https://database.turtle-wow.org/?item=51711" target="_blank">Sweet Mountain Berry</a><span> /</span><br><a href="https://database.turtle-wow.org/?item=13928" target="_blank">Grilled Squid</a></td>
+            <td>+10 Agility</td>
+            <td>10 Minutes</td>
+            <td>Food</td>
+            <td>≈ 1<span class="gold">G</span> 40<span class="silver">S</span> /<br>≈ 1<span class="gold">G</span> 20<span class="silver">S</span>
+        </tr>
+        <tr>
+            <td><a href="https://database.turtle-wow.org/?item=51720" target="_blank">Power Mushroom</a></td>
+            <td>+20 Strength</td>
+            <td>15 Minutes</td>
+            <td>Food</td>
+            <td>≈ 85<span class="silver">S</span></td>
+        </tr>
+
+            <td><span>⭐</span><a href="https://database.turtle-wow.org/?item=60978" target="_blank">Danonzo's Tel'Abim Medley</a><span>¹</span></td>
+            <td>+2% Haste</td>
+            <td>15 Minutes</td>
+            <td>Food</td>
+            <td>≈ 90<span class="silver">S</span></td>
+        </tr>
+        <tr>
+            <td><span>✨</span><a href="https://database.turtle-wow.org/?item=61181" target="_blank">Potion of Quickness</a></td>
+            <td>+5% Haste</td>
+            <td>30 Seconds</td>
+            <td>Potion</td>
+            <td>≈ 2<span class="gold">G</span> 60<span class="silver">S</span></td>
+        </tr>
+        <tr>
+            <td><span>⭐</span><a href="https://database.turtle-wow.org/?item=12450" target="_blank">Juju Flurry</a></td>
+            <td>+3% Attack Speed</td>
+            <td>20 Seconds</td>
+            <td>Unique<br>(1 Minute CD)</td>
+            <td>≈ 1<span class="gold">G</span> 50<span class="silver">S</span></td>
+        </tr>
+    </table>
+    <p style="font-size: 14px; color: lightgray; margin-top: -14px;">
+        ¹Interestingly this buff can be stacked with other food buffs.
+    </p>
+    <h2>Defensive Buffs</h2>
+    <p style="font-size: 14px; color: lightgray;">
+        Buffs that share a category with one another do not stack.<br>Your best defensive buffs are: 
+            <strong><a href="https://database.turtle-wow.org/?item=13510" target="_blank" style="color: inherit; text-decoration: none;">Flask of the Titans</a></strong>, 
+            <strong><a href="https://database.turtle-wow.org/?item=3825" target="_blank" style="color: inherit; text-decoration: none;">Elixir of Fortitude</a></strong>, 
+            <strong><a href="https://database.turtle-wow.org/?item=20079" target="_blank" style="color: inherit; text-decoration: none;">Spirit of Zanza</a></strong>, and 
+            <strong><a href="https://database.turtle-wow.org/?item=21151" target="_blank" style="color: inherit; text-decoration: none;">Rumsey Rum Black Label</a></strong>.<br>
+            If you are not using 
+            <strong><a href="https://database.turtle-wow.org/?item=51711" target="_blank" style="color: inherit; text-decoration: none;">Sweet Mountain Berry</a></strong> / 
+            <strong><a href="https://database.turtle-wow.org/?item=13928" target="_blank" style="color: inherit; text-decoration: none;">Grilled Squid</a></strong> or 
+            <strong><a href="https://database.turtle-wow.org/?item=51720" target="_blank" style="color: inherit; text-decoration: none;">Power Mushroom</a></strong> 
+            for the offensive buff, your best food buff is <strong><a href="https://database.turtle-wow.org/?item=51717" target="_blank" style="color: inherit; text-decoration: none;">Hardened Mushroom</a></strong> / 
+            <strong><a href="https://database.turtle-wow.org/?item=21023" target="_blank" style="color: inherit; text-decoration: none;">Dirge's Kickin' Chimaerok Chops</a></strong>.
+    </p>
+    <p style="font-size: 14px; color: lightgray;">
+        Defensive buffs that are categorised as potions do stack, but share the same 2-minute cooldown.
+    </p>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Effect</th>
+            <th>Duration</th>
+            <th>Category</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td><span>⭐</span><a href="https://database.turtle-wow.org/?item=13510" target="_blank">Flask of the Titans</a><span>²</span></td>
+            <td>+1200 HP</td>
+            <td>💀2 Hours</td>
+            <td>Flask</td>
+            <td>≈ 60<span class="gold">G</span></td>
+        </tr>
+        <tr>
+            <td><span>⭐</span><a href="https://database.turtle-wow.org/?item=3825" target="_blank">Elixir of Fortitude</a></td>
+            <td>+120 HP</td>
+            <td>💀1 Hour</td>
+            <td>Health</td>
+            <td>≈ 90<span class="silver">S</span></td>
+        </tr>
+        <tr>
+            <td><span>⭐</span><a href="https://database.turtle-wow.org/?item=20079" target="_blank">Spirit of Zanza</a></td>
+            <td>+50 Spirit & +50 Stamina</td>
+            <td>💀2 Hours</td>
+            <td>Zanza</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><a href="https://database.turtle-wow.org/?item=51717" target="_blank">Hardened Mushroom</a><span> /</span><br><a href="https://database.turtle-wow.org/?item=21023" target="_blank">Dirge's Kickin' Chimaerok Chops</a></td>
+            <td>+25 Stamina</td>
+            <td>15 Minutes</td>
+            <td>Food</td>
+            <td>≈ 85<span class="silver">S</span> /<br>≈ 3<span class="gold">G</span> 20<span class="silver">S</span>
+        </tr>
+        <tr>
+            <td><a href="https://database.turtle-wow.org/?item=18045" target="_blank">Tender Wolf Steak</a><span> / </span><a href="https://database.turtle-wow.org/?item=12218" target="_blank">Monster Omelet</a><span> /</span><br>
+            <a href="https://database.turtle-wow.org/?item=12216" target="_blank">Spiced Chili Crab</a><span> / </span><a href="https://database.turtle-wow.org/?item=51712" target="_blank">Juicy Striped Melon</a></td>
+            <td>+12 Stamina & +12 Spirit</td>
+            <td>15 Minutes</td>
+            <td>Food</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span>⭐</span><a href="https://database.turtle-wow.org/?item=21151" target="_blank">Rumsey Rum Black Label</a></td>
+            <td>+15 Stamina</td>
+            <td>15 Minutes</td>
+            <td>Alcohol</td>
+            <td>≈ 30<span class="silver">S</span></td>
+        </tr>
+        <tr>
+            <td><span>✨</span><a href="https://database.turtle-wow.org/?item=13457" target="_blank">Greater Fire Protection Potion</a></td>
+            <td>Absorbs 1950 to 3251 fire damage</td>
+            <td>💀1 Hour</td>
+            <td>Potion</td>
+            <td>≈ 1<span class="gold">G</span> 15<span class="silver">S</span></td>
+        </tr>
+        <tr>
+            <td><span>✨</span><a href="https://database.turtle-wow.org/?item=13458" target="_blank">Greater Nature Protection Potion</a></td>
+            <td>Absorbs 1950 to 3251 nature damage</td>
+            <td>💀1 Hour</td>
+            <td>Potion</td>
+            <td>≈ 3<span class="gold">G</span> 50<span class="silver">S</span></td>
+        </tr>
+        <tr>
+            <td><span>✨</span><a href="https://database.turtle-wow.org/?item=13456" target="_blank">Greater Frost Protection Potion</a></td>
+            <td>Absorbs 1950 to 3251 frost damage</td>
+            <td>💀1 Hour</td>
+            <td>Potion</td>
+            <td>≈ 1<span class="gold">G</span> 30<span class="silver">S</span></td>
+        </tr>
+        <tr>
+            <td><span>✨</span><a href="https://database.turtle-wow.org/?item=13459" target="_blank">Greater Shadow Protection Potion</a></td>
+            <td>Absorbs 1950 to 3251 shadow damage</td>
+            <td>💀1 Hour</td>
+            <td>Potion</td>
+            <td>≈ 4<span class="gold">G</span> 90<span class="silver">S</span></td>
+        </tr>
+    </table>
+    <p style="font-size: 14px; color: lightgray; margin-top: -14px;">
+        ²Although <strong><a href="https://database.turtle-wow.org/?item=13510" target="_blank" style="color: inherit; text-decoration: none;">Flask of the Titans</a></strong> 
+        is your best available flask, it's not really necessary to stack that much health—especially if already stacking <strong><a href="https://database.turtle-wow.org/?item=20079" target="_blank" style="color: inherit; text-decoration: none;">Spirit of Zanza</a></strong> and others.
+    </p>
+    <h2>Weapon Buffs</h2>
+    <p style="font-size: 14px; color: lightgray;">
+        Weapon buffs are situational as some enemies are immune to nature damage. In most cases your best option is <strong><a href="https://database.turtle-wow.org/?item=20844" target="_blank" style="color: inherit; text-decoration: none;">Deadly Poison V</a></strong> 
+        on Main Hand and <strong>Corrosive Poison II</strong> on Off Hand.<br>
+        <strong><a href="https://database.turtle-wow.org/?item=8928" target="_blank" style="color: inherit; text-decoration: none;">Instant Poison VI</a></strong> 
+        is a good choice against trash mobs, as they often die too quickly for <strong><a href="https://database.turtle-wow.org/?item=20844" target="_blank" style="color: inherit; text-decoration: none;">Deadly Poison V</a></strong> 
+        or <strong>Corrosive Poison II</strong> to be effective.
+    </p>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Effect</th>
+            <th>Duration</th>
+            <th>Charges</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td><span>⭐</span><a href="https://database.turtle-wow.org/?item=20844" target="_blank">Deadly Poison V</a></td>
+            <td>Each strike has a 30% chance of poisoning the enemy for 136 Nature damage over 12 seconds<br>Stacks up to 5 times on a single target</td>
+            <td>30 Minutes</td>
+            <td>120</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span>⭐</span><span class="blue-text">Corrosive Poison II</span></td>
+            <td>Each strike has a 30% chance of poisoning the enemy for 128 Physical damage over 12 seconds<br>Stacks up to 5 times on a single target</td>
+            <td>1 Hour</td>
+            <td>105</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>✨<a href="https://database.turtle-wow.org/?item=8928" target="_blank">Instant Poison VI</a></td>
+            <td>Each strike has a 20% chance of poisoning the enemy which instantly inflicts 112 to 149 Nature damage</td>
+            <td>30 Minutes</td>
+            <td>115</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span>✨</span><a href="https://database.turtle-wow.org/?item=18262" target="_blank">Elemental Sharpening Stone</a></td>
+            <td>Increase critical chance on a melee weapon by 2%</td>
+            <td>30 Minutes</td>
+            <td>—</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><a href="https://database.turtle-wow.org/?item=12404" target="_blank">Dense Sharpening Stone</a></td>
+            <td>Increase sharp weapon damage by 8</td>
+            <td>30 Minutes</td>
+            <td>—</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span>✨</span><a href="https://database.turtle-wow.org/?item=23122" target="_blank">Consecrated Sharpening Stone</a></td>
+            <td>Increases attack power against undead by 100</td>
+            <td>1 Hour</td>
+            <td>—</td>
+            <td></td>
+        </tr>
+    </table>
+    <h2>Miscellaneous</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Effect</th>
+            <th>Cooldown</th>
+            <th>Category</th>
+            <th>Price</th>
+        <tr>
+            <td><span>✨</span><a href="https://database.turtle-wow.org/?item=13446" target="_blank">Major Healing Potion</a></td>
+            <td>Restores 1050 to 1751 health</td>
+            <td>2 Minutes</td>
+            <td>Potion</td>
+            <td>≈ 55<span class="silver">S</span></td>
+        </tr>
+        <tr>
+            <td><span>✨</span><a href="https://database.turtle-wow.org/?item=3387" target="_blank">Limited Invulnerability Potion</a></td>
+            <td>Immune to physical attacks for the next 6 seconds</td>
+            <td>2 Minutes</td>
+            <td>Potion</td>
+            <td>≈ 1<span class="gold">G</span> 60<span class="silver">S</span></td>
+        </tr>
+        <tr>
+            <td><span>✨</span><a href="https://database.turtle-wow.org/?item=5634" target="_blank">Free Action Potion</a></td>
+            <td>Immune to Stun and Movement Impairing effects for the next 30 seconds</td>
+            <td>2 Minutes</td>
+            <td>Potion</td>
+            <td>≈ 1<span class="gold">G</span> 60<span class="silver">S</span></td>
+        </tr>
+        <tr>
+            <td><span>⭐</span><a href="https://database.turtle-wow.org/?item=7676" target="_blank">Thistle Tea</a></td>
+            <td>Restores 100 energy</td>
+            <td>5 Minutes</td>
+            <td>Non-<br>Aggressive</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><a href="https://database.turtle-wow.org/?item=61675" target="_blank">Nordanaar Herbal Tea</a><span> /</span><br><a href="https://database.turtle-wow.org/?item=15723" target="_blank">Tea with Sugar</a></td>
+            <td>Restores 1050 to 1751 health</td>
+            <td>2 Minutes</td>
+            <td>Non-<br>Aggressive</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span>✨</span><a href="https://database.turtle-wow.org/?item=14530" target="_blank">Heavy Runecloth Bandage</a></td>
+            <td>Heals 2000 damage over 8 seconds</td>
+            <td>1 Minute</td>
+            <td>First Aid</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span>✨</span><a href="https://database.turtle-wow.org/?item=5140" target="_blank">Flash Powder</a></td>
+            <td>Reagent for <strong><a href="https://database.turtle-wow.org/?spell=1857" target="_blank" style="color: inherit; text-decoration: none;">Vanish</a></strong></td>
+            <td>—</td>
+            <td>Reagent</td>
+            <td></td>
+        </tr>
+    </table>
+    <p style="font-size: 14px; color: lightgray; margin-top: -14px;">
+        Additionally, there are a number of damaging consumables to consider, such as 
+        <strong><a href="https://database.turtle-wow.org/?item=10646" target="_blank" style="color: inherit; text-decoration: none;">Goblin Sapper Charge</strong>, 
+        <strong><a href="https://database.turtle-wow.org/?item=8956" target="_blank" style="color: inherit; text-decoration: none;">Oil of Immolation</strong>, 
+        <strong><a href="https://database.turtle-wow.org/?item=13180" target="_blank" style="color: inherit; text-decoration: none;">Stratholme Holy Water</strong>, 
+        <strong><a href="https://database.turtle-wow.org/?item=12217" target="_blank" style="color: inherit; text-decoration: none;">Dragonbreath Chili</strong>, etc.
+    </p>
+        <a href="#" class="button">Back to Top</a>
+</body>
+<script>
+    function isMobile() {
+        return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    }
+
+    if (isMobile()) {
+        document.body.innerHTML = "<h1 style='color: white; text-align: center; margin-top: 20%;'>This page only supports desktop. Please access it from a computer.</h1>";
+        document.body.style.background = "black"; // Set a plain background for better readability
+    }
+</script>
+</html>
+
