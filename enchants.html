@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rogue - Gear Enchants</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://i.imgur.com/4XLyn.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative; /* Add this line */
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #333;
+        }
+        th, td {
+            border: 1px solid #555;
+            padding: 10px;
+        }
+        th {
+            background-color: #444;
+        }
+        a {
+            color: #6495ED;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            text-decoration: underline;
+        }
+        /* Column width adjustments */
+        th:nth-child(1), td:nth-child(1) {
+            width: 16%; /* Name column */
+        }
+        th:nth-child(2), td:nth-child(2) {
+            font-weight: bold;
+            width: 24%; /* Effect column */
+        }
+        th:nth-child(3), td:nth-child(3) {
+            width: 29%; /* Duration column */
+        }
+        th:nth-child(4), td:nth-child(4) {
+            width: 20%; /* Category column */
+        }
+        th:nth-child(5), td:nth-child(5) {
+            width: 7%; /* Price column */
+        }
+        .gold {
+            color: gold;
+        }
+        .silver {
+            color: silver;
+        }
+        .copper {
+            color: #B87333;
+        }
+        .blue-text {
+            color: #6495ED; /* Same color as links */
+            text-decoration: none;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-bottom: 5px;
+            margin-right: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: #444;
+            border: 2px solid #6495ED;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .button:hover {
+            background-color: #6495ED;
+            color: black;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
+            z-index: -1; /* Ensure the overlay stays behind the text */
+        }
+
+        /* Media queries for responsive design */
+        @media only screen and (max-width: 600px) {
+            body {
+                font-size: 14px;
+                padding: 10px;
+            }
+            table {
+                width: 100%;
+                font-size: 12px;
+            }
+            th, td {
+                padding: 5px;
+            }
+            .button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
+
+        @media only screen and (min-width: 601px) and (max-width: 1200px) {
+            body {
+                font-size: 16px;
+                padding: 15px;
+            }
+            table {
+                width: 90%;
+                font-size: 14px;
+            }
+            th, td {
+                padding: 8px;
+            }
+            .button {
+                font-size: 16px;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+    <link rel="icon" type="image/png" href="https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg">
+</head>
+<body>
+    <a href="index.html" class="button">Consumables</a>
+    <a href="enchants.html" class="button">Enchants</a>
+    <a href="changelog.html" class="button">Changelog</a>
+    <h1>Rogue DPS Enchants - Turtle WoW 1.17.2</h1>
+    <p style="font-size: 14px; color: lightgray;">
+        "⭐" indicates that this enchantment is the best one available for that slot.
+    </p>
+	    <p style="font-size: 14px; color: lightgray;">
+        <strong><a href="changelog.html#V1.0.8">Prices are approximate, based on Auction House prices or vendor prices where available.</a></strong> <u>You can save gold by crafting or farming the materials yourself.</u>
+    </p>
+    <table>
+        <tr>
+            <th>Slot</th>
+            <th>Name</th>
+            <th>Effect</th>
+            <th>Acquisition</th>
+            <th>Price</th>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>Head</td>
+            <td><span>⭐</span><a href="https://database.turtle-wow.org/?item=19784" target="_blank">Death's Embrace</td>
+            <td>+25 Attack Power & 1% Dodge</td>
+            <td><a href="https://database.turtle-wow.org/?quest=8186" target="_blank">Quest</a><span> (Zul'Gurub boss drop)</span></td>
+            <td>42<span class="silver">S</span> 10<span class="copper">C</span></td>
+        </tr>
+        <tr>
+            <td>Head</td>
+            <td><a href="https://database.turtle-wow.org/?item=11647" target="_blank">Lesser Arcanum of Voracity</a></td>
+            <td>+8 Agility</td>
+            <td><a href="https://database.turtle-wow.org/?quest=4484" target="_blank">Quest</a></td>
+            <td>39<span class="gold">G</span> 38<span class="silver">S</span> </td>
+        </tr>
+        <tr>
+            <td>Head</td>
+            <td><a href="https://database.turtle-wow.org/?item=92005" target="_blank">Invocation of Shattering</a></td>
+            <td>+75 Armor Penetration</td>
+            <td><a href="https://database.turtle-wow.org/?quest=41079" target="_blank">Quest</a><span> (Lower Karazhan Halls)</span></td>
+            <td>61<span class="gold">G</span> 74<span class="silver">S</span> </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>Neck</td>
+            <td><span>⭐</span><span class="blue-text">Brilliant Opal Gemstone</a></td>
+            <td>+6 Agility</td>
+            <td>Jewelcrafting</td>
+            <td>4<span class="gold">G</span> 37<span class="silver">S</span> </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>Shoulder</td>
+            <td><span>⭐</span><a href="https://database.turtle-wow.org/?item=23548" target="_blank">Might of the Scourge</a></td>
+            <td>+26 Attack Power & 1% Crit Chance</td>
+            <td>Sapphiron (50% drop)</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <td>Shoulder</td>
+            <td><a href="https://database.turtle-wow.org/?item=20077" target="_blank">Zandalar Signet of Might</a></td>
+            <td>+30 Attack Power</td>
+            <td><a href="https://database.turtle-wow.org/?quest=8246" target="_blank">Quest</a> (Zandalar Tribe Exalted)</td>
+            <td>3<span class="gold">G</span> 46<span class="silver">S</span> </td>
+        </tr>
+        <tr>
+            <td>Shoulder</td>
+            <td><a href="https://database.turtle-wow.org/?item=61437" target="_blank">Sigil of Quickness</a></td>
+            <td>+2% Haste</td>
+            <td><a href="https://database.turtle-wow.org/?quest=40910" target="_blank">Quest</a> (Emerald Sanctum)</td>
+            <td>36<span class="gold">G</span> 28<span class="silver">S</span> </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>Back</td>
+            <td><span>⭐</span><a href="https://database.turtle-wow.org/?spell=13882" target="_blank">Enchant Cloak - Lesser Agility</a></td>
+            <td>+3 Agility</td>
+            <td>Enchanting</td>
+            <td>1<span class="gold">G</span> 60<span class="silver">S</span> </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>Chest</td>
+            <td><span>⭐</span><a href="https://database.turtle-wow.org/?spell=20025" target="_blank">Enchant Chest - Greater Stats</a></td>
+            <td>+4 all stats</td>
+            <td>Enchanting</a></td>
+            <td>93<span class="gold">G</span> 29<span class="silver">S</span> </td>
+        </tr>
+        <tr>
+            <td>Chest</td>
+            <td><a href="https://database.turtle-wow.org/?spell=13941" target="_blank">Enchant Chest - Stats</a></td>
+            <td>+3 all stats</td>
+            <td>Enchanting</a></td>
+            <td>8<span class="gold">G</span> 01<span class="silver">S</span> </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>Wrist</td>
+            <td><span>⭐</span><a href="https://database.turtle-wow.org/?spell=57030" target="_blank">Enchant Bracer - Greater Agility</a></td>
+            <td>+7 Agility</td>
+            <td>Enchanting</a></td>
+            <td>40<span class="gold">G</span> 84<span class="silver">S</span> </td>
+        </tr>
+        <tr>
+            <td>Wrist</td>
+            <td><a href="https://database.turtle-wow.org/?spell=20010" target="_blank">Enchant Bracer - Superior Strength</a></td>
+            <td>+9 Strength</td>
+            <td>Enchanting</a></td>
+            <<td>44<span class="gold">G</span> 62<span class="silver">S</span> </td>
+        </tr>
+        <tr>
+            <td>Wrist</td>
+            <td><a href="https://database.turtle-wow.org/?spell=13661" target="_blank">Enchant Bracer - Strength</a></td>
+            <td>+5 Strength</td>
+            <td>Enchanting</a></td>
+            <td>11<span class="silver">S</span> 83<span class="copper">C</span></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>Hands</td>
+            <td><span>⭐</span><a href="https://database.turtle-wow.org/?spell=25080" target="_blank">Enchant Gloves - Superior Agility</a></td>
+            <td>+15 Agility</td>
+            <td>Enchanting</a></td>
+            <td>67<span class="gold">G</span> 47<span class="silver">S</span> </td>
+        </tr>
+        <tr>
+            <td>Hands</td>
+            <td><a href="https://database.turtle-wow.org/?spell=20012" target="_blank">Enchant Gloves - Greater Agility</a></td>
+            <td>+7 Agility</td>
+            <td>Enchanting</a></td>
+            <td>7<span class="gold">G</span> 34<span class="silver">S</span> </td>
+    </table>
+    <table>
+        <tr>
+            <td>Waist</td>
+            <td><span>⭐</span><a href="https://database.turtle-wow.org/?item=61782" target="_blank">Mithril Belt Buckle</a></td>
+            <td>+6 Agility</td>
+            <td>Blacksmithing</td>
+            <td>2<span class="gold">G</span> 00<span class="silver">S</span> </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>Legs</td>
+            <td><span>⭐</span><a href="https://database.turtle-wow.org/?item=19784" target="_blank">Death's Embrace</a></td>
+            <td>+25 Attack Power & 1% Dodge</td>
+            <td><a href="https://database.turtle-wow.org/?quest=8186" target="_blank">Quest</a></a><span> (Zul'Gurub boss drop)</span></td>
+            <td>42<span class="silver">S</span> 10<span class="copper">C</span></td>
+        </tr>
+        <tr>
+            <td>Legs</td>
+            <td><a href="https://database.turtle-wow.org/?item=11647" target="_blank">Lesser Arcanum of Voracity</a></td>
+            <td>+8 Agility</td>
+            <td><a href="https://database.turtle-wow.org/?quest=4484" target="_blank">Quest</a></td>
+            <td>39<span class="gold">G</span> 38<span class="silver">S</span> </td>
+        </tr>
+        <tr>
+            <td>Legs</td>
+            <td><a href="https://database.turtle-wow.org/?item=92005" target="_blank">Invocation of Shattering</a></td>
+            <td>+75 Armor Penetration</td>
+            <td><a href="https://database.turtle-wow.org/?quest=41079" target="_blank">Quest</a></td>
+            <td>61<span class="gold">G</span> 74<span class="silver">S</span> </td>
+        </tr>
+        <tr>
+            <td>Legs</td>
+            <td><a href="https://database.turtle-wow.org/?item=15564" target="_blank">Rugged Armor Kit</a></td>
+            <td>+5 Stamina & +40 armor</td>
+            <td>Leatherworking</a></td>
+            <td>78<span class="silver">S</span> 66<span class="copper">C</span></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>Feet</td>
+            <td><span>⭐</span><a href="https://database.turtle-wow.org/?spell=20023" target="_blank">Enchant Boots - Greater Agility</a></td>
+            <td>+7 Agility</td>
+            <td>Enchanting</a></td>
+            <td>59<span class="gold">G</span> 20<span class="silver">S</span> </td>
+        </tr>
+        <tr>
+            <td>Feet</td>
+            <td><span>⭐</span><a href="https://database.turtle-wow.org/?spell=13890" target="_blank">Enchant Boots - Minor Speed</a><span>¹</span></td>
+            <td>Movement Speed Increase</td>
+            <td>Enchanting</a></td>
+            <td>5<span class="gold">G</span> 46<span class="silver">S</span> </td>
+        </tr>
+    </table>
+    <p style="font-size: 14px; color: lightgray; margin-top: -14px;">
+        ¹While +7 Agility is technically stronger, the increased movement speed provides so much utility that either enchant is a viable choice.
+    </p>
+    <table>
+        <tr>
+            <td>Finger</td>
+             <td><span>⭐</span><span class="blue-text">Brilliant Opal Gemstone</a></td>
+            <td>+6 Agility</td>
+            <td>Jewelcrafting</td>
+            <td>4<span class="gold">G</span> 37<span class="silver">S</span> </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>Main Hand</td>
+            <td><span>⭐</span><a href="https://database.turtle-wow.org/?spell=20034" target="_blank">Enchant Weapon - Crusader</a></td>
+            <td>Often when attacking in melee it heals for 75 to 126 and increases Strength by 100 for 15 seconds</td>
+            <td>Enchanting</td>
+            <td>34<span class="gold">G</span> 50<span class="silver">S</span> </td>
+        </tr>
+        <tr>
+            <td>Main Hand</td>
+            <td><a href="https://database.turtle-wow.org/?spell=20031" target="_blank">Enchant Weapon - Superior Striking</a><span>²</span></td>
+            <td>+5 damage</td>
+            <td>Enchanting</td>
+            <td>83<span class="gold">G</span> 36<span class="silver">S</span> </td>
+        </tr>
+    </table>
+    <p style="font-size: 14px; color: lightgray; margin-top: -14px;">
+        ²Superior Striking can sometimes outperform Crusader if you're using daggers instead of swords.
+    </p>
+    <table>
+        <tr>
+            <td>Off Hand</td>
+            <td><span>⭐</span><a href="https://database.turtle-wow.org/?spell=23800" target="_blank">Enchant Weapon - Agility</a></td>
+            <td>+15 Agility</td>
+            <td>Enchanting</td>
+            <td>84<span class="gold">G</span> 83<span class="silver">S</span> </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>Ranged</td>
+            <td><span>⭐</span><a href="https://database.turtle-wow.org/?item=10548" target="_blank">Sniper Scope</a></td>
+            <td>+7 damage</td>
+            <td>Engineering</td>
+            <td>2<span class="gold">G</span> 97<span class="silver">S</span> </td>
+        </tr>
+    </table>
+    <a href="#" class="button">Back to Top</a>
+</body>
+</html>
